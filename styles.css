@@ -1,10 +1,51 @@
 h1 {
   text-align: center;
-  color: turquoise;
+  color: rgb(3, 141, 127);
 }
 
 .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+nav {
+  width: 100%;
+  height: 80px;
+  background: #D7D7D7;
+  overflow: auto;
+  text-transform: uppercase;
+  font-size: 1em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  /* margin-left: 300px; */
+}
+
+nav li {
+  float: left;
+  display: block;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  margin-right: 15px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+nav a {
+  text-decoration: none;
+  width: auto;
+  display: block;
+}
+
+nav a:link {
+  color: #000000;
+}
+
+nav a:visited {
+  color: #964d03;
+}
+
+nav a:hover {
+  color: #ff8204;
 }
