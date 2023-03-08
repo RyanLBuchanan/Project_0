@@ -1,8 +1,10 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text&display=swap');
+
+/* * { */
   /* CSS reset */
   /* margin: 0;
   padding: 0;   */
-}
+/* } */
 
 h1 {
   text-align: center;
@@ -61,3 +63,19 @@ img {
   border-radius: 30px;
   
 }
+
+p {
+  background-color: white;
+  margin: 5px 10px 15px 15px;
+  border: black solid 5px;
+  padding: 50px;
+  border-radius: 30px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* #firstPosition {
+  position: absolute;
+  left: 500px;
+} */
