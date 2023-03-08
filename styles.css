@@ -1,3 +1,9 @@
+* {
+  /* CSS reset */
+  /* margin: 0;
+  padding: 0;   */
+}
+
 h1 {
   text-align: center;
   color: rgb(3, 141, 127);
@@ -48,4 +54,10 @@ nav a:visited {
 
 nav a:hover {
   color: #ff8204;
+}
+
+img {
+  border: solid 2px gray;
+  border-radius: 30px;
+  
 }
