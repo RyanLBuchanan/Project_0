@@ -9,3 +9,5 @@ function myFunc () {
 }
 
 myFunc();
+
+console.log(`This is a string of text ${placeholder}`);
