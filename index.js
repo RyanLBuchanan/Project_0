@@ -1,13 +1,27 @@
-// Single lin comment
-let myString = "This is my string";
+let btn = document.querySelector('#btn');
+let div = document.querySelector('#joke');
 
-/* This is a 
-multiline comment */
+btn.addEventListener('click', myFunc);
 
-function myFunc () {
-  console.log(myString);
+async function myFunc() {
+  let category = 'animal';
+  let response = await fetch(`https://api.chucknorris.io/jokes/random?category=${category}`);
+  let parsedRes = await response.json();
+  div.innerHTML = parsedRes.value;
 }
 
-myFunc();
 
-console.log(`This is a string of text ${placeholder}`);
+
+// // Single lin comment
+// let myString = "This is my string";
+
+// /* This is a 
+// multiline comment */
+
+// function myFunc () {
+//   console.log(myString);
+// }
+
+// myFunc();
+
+// console.log(`This is a string of text ${placeholder}`);
