@@ -38,7 +38,9 @@ nav li {
   float: left;
   display: block;
   padding-top: 22px;
+  padding-right: 100px;
   padding-bottom: 22px;
+  padding-left: 100px;
   margin-right: 15px;
   text-align: center;
   white-space: nowrap;
@@ -65,9 +67,9 @@ nav a:hover {
 img {
   border: solid 2px gray;
   border-radius: 15px;
-  /* width: 50%; */
+  /* width: 300px; */
   max-width: 50vw;
-  min-width: 50vw;
+  min-width: 50vw; 
 }
 
 p {
@@ -120,4 +122,22 @@ p {
   .container {
     flex-direction: row;
   }
+}
+
+#name:focus {
+  background-color: #ff8204;
+}
+
+#btn:hover {
+  background-color: aqua;
+}
+
+:root {
+  --main-bg-color: turquoise;
+}
+
+#cssVariableDemo {
+  height: 100px;
+  width: 100px;
+  background-color: var(--main-bg-color);
 }
