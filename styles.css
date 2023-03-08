@@ -6,6 +6,10 @@
   padding: 0;   */
 /* } */
 
+html {
+    height: 200vh;
+}
+
 h1 {
   text-align: center;
   color: rgb(3, 141, 127);
@@ -27,7 +31,7 @@ nav {
   padding-top: 10px;
   padding-bottom: 10px;
   font-weight: bold;
-  /* margin-left: 300px; */
+  border-radius: 15px;
 }
 
 nav li {
@@ -60,8 +64,10 @@ nav a:hover {
 
 img {
   border: solid 2px gray;
-  border-radius: 30px;
-  
+  border-radius: 15px;
+  /* width: 50%; */
+  max-width: 50vw;
+  min-width: 50vw;
 }
 
 p {
@@ -69,13 +75,49 @@ p {
   margin: 5px 10px 15px 15px;
   border: black solid 5px;
   padding: 50px;
-  border-radius: 30px;
+  border-radius: 15px;
   font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   font-style: italic;
 }
 
-/* #firstPosition {
-  position: absolute;
+#firstPosition {
+  /* position: relative; */
+  position: sticky;
   left: 500px;
-} */
+}
+
+.myClass {
+  height: 100px;
+  width: 100px;
+  background-color: gray;
+  border: 2px solid black;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  align-items: center;
+  /* justify-content: center; */
+  justify-content: space-around;
+}
+
+.containerGrid {
+  display: grid;
+  column-gap: 40px;
+  row-gap: 40px;
+}
+
+.myOtherClass {
+  /* grid-column-start: 1;
+  grid-column-end: 4; */
+  grid-column: 1 / 4;
+}
+
+@media all and (min-width:720px) {
+  .container {
+    flex-direction: row;;
+  }
+}
