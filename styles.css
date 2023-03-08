@@ -118,6 +118,6 @@ p {
 
 @media all and (min-width:720px) {
   .container {
-    flex-direction: row;;
+    flex-direction: row;
   }
 }
