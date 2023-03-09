@@ -1,15 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Golos+Text&display=swap');
 
-/* * { */
-  /* CSS reset */
-  /* margin: 0;
-  padding: 0;   */
-/* } */
-
-/* html {
-    height: 200vh;
-} */
-
 h1 {
   text-align: center;
   color: rgb(3, 141, 127);
@@ -67,21 +57,10 @@ nav a:hover {
 img {
   border: solid 2px gray;
   border-radius: 15px;
-  /* width: 300px; */
   max-width: 30vw;
-  /* min-width: 50vw;  */
 }
 
-/* p {
-  background-color: white;
-  margin: 5px 10px 15px 15px;
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: 700;
-  font-style: italic;
-} */
-
 #firstPosition {
-  /* position: relative; */
   position: sticky;
   left: 500px;
 }
@@ -99,7 +78,6 @@ img {
   align-items: center;
   height: 100vh;
   align-items: center;
-  /* justify-content: center; */
   justify-content: space-around;
 }
 
@@ -110,8 +88,6 @@ img {
 }
 
 .myOtherClass {
-  /* grid-column-start: 1;
-  grid-column-end: 4; */
   grid-column: 1 / 4;
 }
 
@@ -140,6 +116,7 @@ img {
 }
 
 h3 {
+  text-align: center;
   color: green;
 }
 
@@ -160,7 +137,6 @@ label {
   clear: left;
   text-align: right;
   padding-right: 10px;
-  /* margin-top: 10px; */
 }
 
 input,
