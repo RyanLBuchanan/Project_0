@@ -6,9 +6,9 @@
   padding: 0;   */
 /* } */
 
-html {
+/* html {
     height: 200vh;
-}
+} */
 
 h1 {
   text-align: center;
@@ -72,16 +72,13 @@ img {
   /* min-width: 50vw;  */
 }
 
-p {
+/* p {
   background-color: white;
   margin: 5px 10px 15px 15px;
-  /* border: black solid 5px; */
-  /* padding: 50px; */
-  /* border-radius: 15px; */
   font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   font-style: italic;
-}
+} */
 
 #firstPosition {
   /* position: relative; */
@@ -150,15 +147,28 @@ h3 {
   font-size: 24pt;
 }
 
-/* figcaption {
-  border: black solid 1px;
-  border-radius: 15px;
-} */
-
-/* #introP {
-
+form {
+  background-color: #eaeaea;
+  font-family: Arial, sans-serif;
+  padding: 10px;
+  min-width: 400px;
 }
 
-#secondP {
+label {
+  float: left;
+  width: 150px;
+  clear: left;
+  text-align: right;
+  padding-right: 10px;
+  margin-top: 10px;
+}
 
-} */
+input,
+textarea {
+  margin-top: 10px;
+  display: block;
+}
+
+#mySubmit {
+  margin-left: 160px;
+}

@@ -1,7 +1,12 @@
+// import { myString, mySuperCoolFunction} from "./myJsModule.js";
+
 let btn = document.querySelector('#btn');
 let div = document.querySelector('#joke');
+// let div = document.getElementById('joke');
+
 
 btn.addEventListener('click', myFunc);
+// btn.addEventListener('mouseover', myOtherFunc);
 
 async function myFunc() {
   let category = 'animal';
@@ -11,20 +16,27 @@ async function myFunc() {
   div.innerHTML = parsedRes.value;
 }
 
-function funcSwitch(x) {
-  switch (x) {
-    case 1: {
-      console.log('this is 1');
-      break;
-    }
-    case 2: {
-      console.log('this is 2');
-      break;
-    }
-  }
-}
+// function myOtherFunc() {
+//   console.log('This is my other func');
+// }
 
-funcSwitch(1);
+// function funcSwitch(x) {
+//   switch (x) {
+//     case 1: {
+//       console.log('this is 1');
+//       break;
+//     }
+//     case 2: {
+//       console.log('this is 2');
+//       break;
+//     }
+//   }
+// }
+
+// funcSwitch(1);
+
+
+// mySuperCoolFunction();
 
 // Class implementation 
 // class Car {
