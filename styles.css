@@ -68,8 +68,8 @@ img {
   border: solid 2px gray;
   border-radius: 15px;
   /* width: 300px; */
-  max-width: 50vw;
-  min-width: 50vw; 
+  max-width: 30vw;
+  /* min-width: 50vw;  */
 }
 
 p {
@@ -147,7 +147,7 @@ h3 {
 }
 
 #joke {
-  font-size: 24;
+  font-size: 24pt;
 }
 
 /* figcaption {

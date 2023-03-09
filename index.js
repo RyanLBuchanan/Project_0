@@ -11,20 +11,60 @@ async function myFunc() {
   div.innerHTML = parsedRes.value;
 }
 
-// Class implementation 
-class Car {
-  name = 'Toyota Corolla';
-  color;
-  miles;
-  year;
-
-  odometerAdd(distance) {
-    this.miles += distance;
+function funcSwitch(x) {
+  switch (x) {
+    case 1: {
+      console.log('this is 1');
+      break;
+    }
+    case 2: {
+      console.log('this is 2');
+      break;
+    }
   }
 }
 
-let myCat = new Car();
-let anotherCar = new Car();
+funcSwitch(1);
+
+// Class implementation 
+// class Car {
+//   name = 'Toyota Corolla';
+//   color;
+//   miles;
+//   year;
+
+//   constructor(name, color, miles, year){
+//     this.name = name;
+//     this.color = color;
+//     this.miles = miles;
+//     this._year = year;
+//   }
+
+//   odometerAdd(distance) {
+//     this.miles += distance;
+//   }
+
+//   get age () {
+//     const n = new Date();
+//     console.log(n.getFullYear() - this.year);
+//   }
+
+//   set year(year) {
+//     this._year = year;
+//   }
+// }
+
+// let myCar = new Car('Dodge Challenger', 'black', 3, 2015);
+// let anotherCar = new Car();
+// console.log(myCar.name);
+// myCar.odometerAdd(3000);
+// console.log(myCar);
+// console.log(`My car is ${myCar.age} years old.`);
+// console.log(myCar);
+// myCar.age;
+// myCar.year = 1990;
+// console.log(myCar);
+// console.log('Something!');
 
 // Symbol implementation
 // const SYMBOLPROPERTY = Symbol('This is a symbol description');
