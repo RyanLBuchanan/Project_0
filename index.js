@@ -10,3 +10,32 @@ async function myFunc() {
   console.log(parsedRes);
   div.innerHTML = parsedRes.value;
 }
+
+// Class implementation 
+class Car {
+  name = 'Toyota Corolla';
+  color;
+  miles;
+  year;
+
+  odometerAdd(distance) {
+    this.miles += distance;
+  }
+}
+
+let myCat = new Car();
+let anotherCar = new Car();
+
+// Symbol implementation
+// const SYMBOLPROPERTY = Symbol('This is a symbol description');
+// let obj = {
+//   aProperty: 'a string',
+//   [SYMBOLPROPERTY]: 'this value is paired with a symbol',
+//   myMethod: () => {
+//     console.log('This is a method from an object.');
+//   }
+// }
+
+// console.log(obj.aProperty);
+// console.log(obj[SYMBOLPROPERTY]);
+// obj.myMethod();
