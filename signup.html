@@ -71,61 +71,53 @@
   <h2>Please complete all the fields below and click the "Submit" button:
   </h2>
 </div>
-  <!-- <form>
-    <div class="formSection">
-      <label for="name">Name</label>
-      <input type="text" id="name" />
-    </div>
-    <br>
-    <br>
-    <div class="formSection">
-      <label for="email">Email</label>
-      <input type="text" id="email" />
-    </div>
-    <br>
-    <br> -->
-    
-  </form>
-	
 	<form method="post" action="https://webdevbasics.net/scripts/demo.php">
 		<label for="myName">*Name:</label>
 		<input type="text" name="myName" id="myName" required="required" placeholder="your first and last name">
+    <br>
 		<label for="myEmail">*E-mail:</label>
-		<input type="email" name="myEmail" id="myEmail" required="required" placeholder="you@yourdomain.com"><label for="myRating">Rating (1 - 10):</label>
+		<input type="email" name="myEmail" id="myEmail" required="required" placeholder="you@yourdomain.com">
+    <br>
+    <label for="myRating">Rating (1 - 10):</label>
 		<input type="range" name="myRating" id="myRating" min="1" max="10">
+    <br>
     <div class="formSection">
       <label for="birthday">Birthday</label>
       <input type="date" id="birthday" />
     </div>
     <br>
-    <br>
     <div class="formSection">
       <label for="male">Male</label>
       <input type="radio" name="gender" id="male" />
+      <br>
       <label for="male">Female</label>
       <input type="radio" name="gender" id="female" />
     </div>
-    <br>
     <br>
     <div >
       <p>Check a radio button below to indicate your generous donation:</p>
       <label for="five">$5</label>
       <input type="radio" name="donation" id="five" />
+      <br>
       <label for="twenty-five">$25</label>
       <input type="radio" name="donation" id="twenty-five" />
+      <br>
       <label for="one-hundred">$100</label>
       <input type="radio" name="donation" id="one-hundred" />
+      <br>
       <label for="five-hundred">$500</label>
       <input type="radio" name="donation" id="five-hundred" />
     </div>
     <br>
     <br>
-    <br>
     <div>
       <!-- <button type="submit" id="btn">Submit</button> -->
     </div>
+    <form>
 		<label for="myComments">*Comments:</label>
 		<textarea name="myComments" id="myComments" rows="2" cols="20" required="required"></textarea>
+    <br>
+    <br>
 		<input id="mySubmit" type="submit" value="Submit">
 	</form>
 
