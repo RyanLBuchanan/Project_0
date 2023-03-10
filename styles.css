@@ -2,7 +2,7 @@
 
 h1 {
   text-align: center;
-  color: rgb(3, 141, 127);
+  color: #2579aa;
 }
 
 .center {
@@ -14,7 +14,7 @@ h1 {
 nav {
   width: 100%;
   height: 80px;
-  background: #D7D7D7;
+  background: #2579aa;
   overflow: auto;
   text-transform: uppercase;
   font-size: 1em;
@@ -122,7 +122,7 @@ img {
 
 h3 {
   text-align: center;
-  color: green;
+  color: #2579aa;
 }
 
 #joke {
@@ -156,7 +156,7 @@ textarea {
 
 /* Header Style */
 .header-wrapper {
-  background-color: rgb(247, 240, 247);
+  background-color: #2579aa;
   color: #1f0101;
   font-weight: 200;
   font-size: 1.2em;
