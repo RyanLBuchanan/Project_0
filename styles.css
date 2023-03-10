@@ -155,15 +155,14 @@ textarea {
 }
 
 /* Header Style */
-
-.header-wrapper{
+.header-wrapper {
   background-color: rgb(247, 240, 247);
   color: #1f0101;
   font-weight: 200;
   font-size: 1.2em;
 }
 
-.header-wrapper ul{
+.header-wrapper ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
