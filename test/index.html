@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="index.js" defer></script>
+</head>
+<body>
+
+
+  <!-- THE CODE BETWEEN THESE COMMENTS --> 
+  <div id="vote-options" class="vote-options">
+  <button onClick="vote(1)">Vote Up </button>
+  <button onClick="vote(-1)">Vote Down </button>
+  <button onClick="showHistoricVotes()">History </button>
+    
+<div>
+  <img id="image-to-vote-on" class="col-lg"></img>
+  </div>
+  
+  </div>
+
+  <div id="vote-results"  class="vote-results">
+  <button onClick="showVoteOptions()">Show Vote Options</button>
+    <div id="grid" class="imgrid"/>
+ </div>
+<!-- THE CODE BETWEEN THESE COMMENTS --> 
+
+</body>
+</html>
