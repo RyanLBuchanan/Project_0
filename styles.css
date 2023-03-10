@@ -153,3 +153,36 @@ textarea {
 #mySubmit {
   margin-left: 160px;
 }
+
+/* Header Style */
+
+.header-wrapper{
+  background-color: rgb(247, 240, 247);
+  color: #1f0101;
+  font-weight: 200;
+  font-size: 1.2em;
+}
+
+.header-wrapper ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+.internal-wrapper {
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.header-wrapper .header-links-wrapper ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.header-wrapper ul {
+  display: flex;
+  padding: 14px 0 8px;
+  height: 25px;
+  opacity: 0.8;
+}

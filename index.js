@@ -1,93 +1,62 @@
-// import { myString, mySuperCoolFunction} from "./myJsModule.js";
+const url = `https://api.thecatapi.com/v1/breeds`;
+const api_key = "live_N0tyhBfoYM0PXzuBCud2cOULksmWFZ5yvomQ12MQknGhLKHuymmt8Oh3Hz5PbJTK"
+let storedBreeds = []
 
-let btn = document.querySelector('#btn');
-let div = document.querySelector('#joke');
-// let div = document.getElementById('joke');
+ fetch(url,{headers: {
+      'x-api-key': api_key
+    }})
+ .then((response) => {
+   return response.json();
+ })
+.then((data) => {
+   
+   //filter to only include those with an `image` object
+   data = data.filter(img=> img.image?.url!=null)
+   
+  storedBreeds = data;
+   
+   for (let i = 0; i < storedBreeds.length; i++) {
+    const breed = storedBreeds[i];
+    let option = document.createElement('option');
+     
+     //skip any breeds that don't have an image
+     if(!breed.image)continue
+     
+    //use the current array index
+    option.value = i;
+    option.innerHTML = `${breed.name}`;
+document.getElementById('breed_selector').appendChild(option);
+    
+    }
+   //show the first breed by default
+   showBreedImage(0)
+})
+.catch(function(error) {
+   console.log(error);
+});
 
-
-btn.addEventListener('click', myFunc);
-// btn.addEventListener('mouseover', myOtherFunc);
-
-async function myFunc() {
-  let category = 'animal';
-  let response = await fetch(`https://api.chucknorris.io/jokes/random?category=${category}`);
-  let parsedRes = await response.json();
-  console.log(parsedRes);
-  div.innerHTML = parsedRes.value;
+function showBreedImage(index)
+{ 
+  document.getElementById("breed_image").src= storedBreeds[index].image.url;
+  
+  document.getElementById("breed_json").textContent= storedBreeds[index].temperament
+  
+  
+  document.getElementById("wiki_link").href= storedBreeds[index].wikipedia_url
+  document.getElementById("wiki_link").innerHTML= storedBreeds[index].wikipedia_url
 }
 
-// function myOtherFunc() {
-//   console.log('This is my other func');
+// let btn = document.querySelector('#btn');
+// let div = document.querySelector('#joke');
+
+
+// btn.addEventListener('click', myFunc);
+
+
+// async function myFunc() {
+//   let category = 'animal';
+//   let response = await fetch(`https://api.chucknorris.io/jokes/random?category=${category}`);
+//   let parsedRes = await response.json();
+//   console.log(parsedRes);
+//   div.innerHTML = parsedRes.value;
 // }
-
-// function funcSwitch(x) {
-//   switch (x) {
-//     case 1: {
-//       console.log('this is 1');
-//       break;
-//     }
-//     case 2: {
-//       console.log('this is 2');
-//       break;
-//     }
-//   }
-// }
-
-// funcSwitch(1);
-
-
-// mySuperCoolFunction();
-
-// Class implementation 
-// class Car {
-//   name = 'Toyota Corolla';
-//   color;
-//   miles;
-//   year;
-
-//   constructor(name, color, miles, year){
-//     this.name = name;
-//     this.color = color;
-//     this.miles = miles;
-//     this._year = year;
-//   }
-
-//   odometerAdd(distance) {
-//     this.miles += distance;
-//   }
-
-//   get age () {
-//     const n = new Date();
-//     console.log(n.getFullYear() - this.year);
-//   }
-
-//   set year(year) {
-//     this._year = year;
-//   }
-// }
-
-// let myCar = new Car('Dodge Challenger', 'black', 3, 2015);
-// let anotherCar = new Car();
-// console.log(myCar.name);
-// myCar.odometerAdd(3000);
-// console.log(myCar);
-// console.log(`My car is ${myCar.age} years old.`);
-// console.log(myCar);
-// myCar.age;
-// myCar.year = 1990;
-// console.log(myCar);
-// console.log('Something!');
-
-// Symbol implementation
-// const SYMBOLPROPERTY = Symbol('This is a symbol description');
-// let obj = {
-//   aProperty: 'a string',
-//   [SYMBOLPROPERTY]: 'this value is paired with a symbol',
-//   myMethod: () => {
-//     console.log('This is a method from an object.');
-//   }
-// }
-
-// console.log(obj.aProperty);
-// console.log(obj[SYMBOLPROPERTY]);
-// obj.myMethod();

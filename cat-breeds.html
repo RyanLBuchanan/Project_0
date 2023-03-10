@@ -25,6 +25,9 @@
 
 <body>
   <header>
+    <div class="header-wrapper">
+      <div class="internal-wrapper">
+          <div class="header-links-wrapper">
     <nav>
       <ul>
         <li>
@@ -46,6 +49,9 @@
           <a href="signup.html">Signup</a>
         </li>
       </ul>
+    </div>
+  </div>
+</div>
     </nav>
   </header>
   <h1>Cuddly Cat Breeds</h1>
@@ -77,6 +83,19 @@
       <a href="https://www.purina.com/cats/cat-breeds/norwegian-forest-cat">Norwegian Forest Cat</a>
     </li>
   </ul>
+
+  <select onchange="showBreedImage(value)" name="breed_selector" id="breed_selector">
+  </select>
+  
+  <div class="box">
+  <a id="wiki_link" target="_blank"></a>
+  <div id="breed_json"></div>
+  </div>
+  
+  <div>
+  <img id="breed_image"></img>
+  </div>
+
 </body>
 
 </html>
