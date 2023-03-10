@@ -60,6 +60,15 @@ img {
   max-width: 30vw;
 }
 
+img.free {
+  border: #eaeaea;
+}
+
+a {
+  color: #2579aa;
+  text-decoration: none;
+}
+
 .p {
   padding: 20px;
   margin: 20px;
